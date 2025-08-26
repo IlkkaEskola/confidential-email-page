@@ -1,27 +1,54 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
 #email{
+    position: relative;
     padding: 50px;
     margin-top: 50px;
     width: 500px;
-    height: 500px;
+    height: 600px;
     border: 2px solid black;
     box-sizing: border-box;
+    box-shadow: 4px 3px rgb(173, 166, 166);
+    background-color: rgb(243, 232, 219);
 }
 
 #confidential{
+    position: absolute;
+    top: 50px;
+    right: 30px;
     display: inline-block;
     padding: 10px;
     margin-left: 5px;
     border: 5px solid red;
     color: red;
     transform: rotate(-20deg);
-    
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 #top-secret{
+    position: absolute;
+    bottom: 100px;
+    right: 60px;
     display: inline-block;
     padding: 10px;
     margin-left: 5px;
     border: 5px solid red;
     color: red;
     transform: rotate(15deg);
+    width: 120px;
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.blurred{
+    filter: blur(3px);
 }
